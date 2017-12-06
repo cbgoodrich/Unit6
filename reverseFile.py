@@ -5,8 +5,4 @@
 file = open(""+input("Enter your file: ")+"")
 
 for word in file:
-    words = word[::-1]
-    print(words)
     
-
-
