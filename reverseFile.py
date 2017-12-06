@@ -5,4 +5,4 @@
 file = open(""+input("Enter your file: ")+"")
 
 for word in file:
-    
+        
