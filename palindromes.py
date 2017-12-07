@@ -6,8 +6,8 @@ dictionary = open("engmix.txt")
 
 for word in dictionary:
     word = word.strip()
-    reverse = list(word).reverse()
-    if list(word) == reverse:
+    setUp = list(word)
+    setUp.reverse()
+    if list(word) == setUp:
         print(word)
-
 
