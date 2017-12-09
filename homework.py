@@ -26,8 +26,23 @@ def numberWord():
         wordList.append(word)
     print("The number", number, "word in the dictionary is","'"+wordList[number-1]+"'")
     
-numberWord()
+def exclaimationPoint():
+    file = open("howManyWords.py")
+    for line in file:
+        print(line.strip()+"!")
 
+
+def letterSearch():
+    letter = input("Enter a letter: ")
+    
+    letterCount = 0
+    word = ""
+    for words in dictionary:
+        loopCount = words.count(letter)
+        if loopCount > letterCount:
+            letterCount = loopCount
+            word = words
+    print("The word with the most", letter+"'s is", word)
 
 
 
