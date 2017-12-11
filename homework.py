@@ -1,6 +1,6 @@
 #Charlie Goodrich
 #12/08/17
-#homework.py - the homework sheet boi
+#homework.py - the homework sheet [B emoji]oi
 
 dictionary = open("engmix.txt")
 
@@ -15,7 +15,6 @@ def wordAsk():
             break
     if counter == 0:
         print("Your word is not in the dictionary")
-        
 
 def numberWord():
     number = int(input("Enter a number word: "))
@@ -43,4 +42,14 @@ def letterSearch():
             word = words
     print("The word with the most", letter+"'s is", word)
 
-
+if __name__ == "__main__":
+    
+    chooser = int(input("Enter a number between 1 and 4: "))
+    if chooser == 1:
+        wordAsk()
+    elif chooser == 2:
+        numberWord()
+    elif chooser == 3:
+        exclaimationPoint()
+    else:
+        letterSearch()
