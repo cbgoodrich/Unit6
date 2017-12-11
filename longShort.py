@@ -9,5 +9,5 @@ wordList = [""]*26
 dictionary = open("engmix.txt")
 
 for words in dictionary:
-    print(alphabet.index(words[0]))
+    print(alphabet[alphabet.index(words[0])])
     break
