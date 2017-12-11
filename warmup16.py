@@ -4,8 +4,8 @@
 
 dictionary = open("engmix.txt")
 
-first_Name = input("What's your first name? ")
-last_Name = input("What's your last initial? ")
+first_Name = input("Enter your first name: ")
+last_Name = input("Enter your last name: ")
 
 firstName = first_Name.lower()
 lastName = last_Name.lower()
