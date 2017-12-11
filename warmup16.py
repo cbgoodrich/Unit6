@@ -4,15 +4,11 @@
 
 dictionary = open("engmix.txt")
 
-first_Name = input("Enter your first name: ")
-last_Name = input("Enter your last name: ")
-
-firstName = first_Name.lower()
-lastName = last_Name.lower()
+firstName = input("Enter your first name: ").lower()
+lastName = input("Enter your last name: ").lower()
 
 for words in dictionary:
     word = words.strip()
     if word != "":
         if word[0] == firstName[0] and word[-1] == lastName[0]:
             print(word)
-
