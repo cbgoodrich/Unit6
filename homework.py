@@ -18,7 +18,7 @@ def wordAsk():
         
 
 def numberWord():
-    number = int(input("What number word do you want? "))
+    number = int(input("Enter a number word: "))
     
     wordList = []
     for words in dictionary:
@@ -30,7 +30,6 @@ def exclaimationPoint():
     file = open("howManyWords.py")
     for line in file:
         print(line.strip()+"!")
-
 
 def letterSearch():
     letter = input("Enter a letter: ")
