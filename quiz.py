@@ -43,7 +43,7 @@ program3()
 program4()
 """
 
-def program5():
+"""def program5():
     wordList = []
     for word in dictionary:
         wordList.append(word)
@@ -59,5 +59,5 @@ def program5():
     else:
         print("The middle word is", wordList[length//2+1])
 program5()
-    
+"""
     
