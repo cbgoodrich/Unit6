@@ -33,7 +33,7 @@ program2()
 program3()
 """
 
-def program4():
+"""def program4():
     letter = input("Enter a letter: ")
     not_counter = 0
     for words in dictionary:
@@ -41,6 +41,23 @@ def program4():
             not_counter += 1
     print("There are", not_counter, "words without the letter", "'"+letter+"'")
 program4()
+"""
 
+def program5():
+    wordList = []
+    for word in dictionary:
+        wordList.append(word)
+    length = len(wordList)
+    if length%2 == 0:
+        print("There are two middle words")
+        print("Do you want the first or the second?")
+        choose = int(input("Enter 1 for the first or 2 for the second: "))
+        if choose == 1:
+            print("The middle word is", wordList[length/2-1])
+        else:
+            print("The middle word is", wordList[length/2])
+    else:
+        print("The middle word is", wordList[length//2+1])
+program5()
     
     
